@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/shibisty/gtr/main/schema/gtr.schema.json",
+    "name": "migration",
+    "version": "0.1.0",
+    "license": "MIT",
+    "repository": "github:shibisty/migration.go",
+    "engines": {
+        "go": ">=1.22"
+    },
+    "scripts": {
+        "test": "go test ./..."
+    }
+}

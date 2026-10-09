@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/shibisty/gtr/main/schema/gtr.schema.json",
+    "name": "migration-orm",
+    "version": "0.1.0",
+    "license": "MIT",
+    "repository": "github:shibisty/migration.go-orm-driver",
+    "engines": {
+        "go": ">=1.22"
+    },
+    "devDependencies": {
+        "migration": "github:shibisty/migration.go",
+        "orm": "github:shibisty/orm.go"
+    },
+    "peerDependencies": {
+        "migration": "^0.1",
+        "orm": "^0.1"
+    },
+    "scripts": {
+        "test": "go test ./..."
+    }
+}

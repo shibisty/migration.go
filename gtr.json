@@ -1,0 +1,22 @@
+{
+    "name": "migration-dev",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Local workspace of the migration family (ADR-0006, ADR-0009); not committed",
+    "engines": {
+        "go": ">=1.22"
+    },
+    "dependencies": {
+        "orm": "file:../orm.go/core",
+        "orm-mysql": "file:../orm.go/drivers/mysql",
+        "orm-postgres": "file:../orm.go/drivers/postgres"
+    },
+    "workspaces": [
+        "core",
+        "drivers/*",
+        "example"
+    ],
+    "scripts": {
+        "test": "gtr run -r test"
+    }
+}
