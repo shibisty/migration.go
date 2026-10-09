@@ -4,6 +4,8 @@ A Laravel-style migration runner for Go: batches, rollback, status. Not tied
 to any database: where the journal is stored and what a migration operates on
 is decided by the backend (`Store`). No external dependencies, Go 1.22+.
 
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/cw/shibisty)
+
 | Backend | Package |
 |---|---|
 | SQL via orm (MySQL, Postgres, SQLite) | [`migration-orm`](https://github.com/shibisty/migration.go-orm-driver) |
@@ -84,3 +86,7 @@ gtr run test -- -race -cover   # 100% coverage
 ## License
 
 MIT
+
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/cw/shibisty)
+
+If this project helps you, consider supporting its development on Patreon ❤️
