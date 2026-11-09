@@ -2,3 +2,6 @@ coverage.out
 *.test
 *.exe
 *.db
+gtr_modules/
+go.mod
+go.work
