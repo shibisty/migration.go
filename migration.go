@@ -4,7 +4,7 @@
 // of applied migrations is stored, and what a migration operates on, is decided by a Store,
 // a separate implementation for a specific backend:
 //
-//   - migration-orm: SQL databases via orm and its driver (mysql, postgres, sqlite);
+//   - migration/orm: SQL databases via orm and its driver (mysql, postgres, sqlite);
 //   - MemoryStore from this package: for tests;
 //   - any custom implementation (MongoDB, Redis, files, an external API).
 //

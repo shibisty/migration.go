@@ -8,14 +8,14 @@ is decided by the backend (`Store`). No external dependencies, Go 1.22+.
 
 | Backend | Package |
 |---|---|
-| SQL via orm (MySQL, Postgres, SQLite) | [`migration-orm`](https://github.com/shibisty/migration.go-orm-driver) |
+| SQL via orm (MySQL, Postgres, SQLite) | [`@migration/orm`](https://github.com/shibisty/migration.go-orm-driver) |
 | In-memory, for tests | `migration.NewMemoryStore` (this package) |
 | Custom (MongoDB, Redis, files, API) | implement `migration.Store[DB]` |
 
 ## Installation
 
 ```bash
-gtr add github:shibisty/migration.go
+gtr add migration
 ```
 
 ## How it works
@@ -34,7 +34,7 @@ type Store[DB any] interface {
 }
 ```
 
-`DB` is what each migration receives: for `migration-orm` it is a transaction and
+`DB` is what each migration receives: for `@migration/orm` it is a transaction and
 a schema builder; for a document database, its client. The batch logic is the same for all.
 
 If the `Store` implements `Locker`, `Migrate` and `Rollback` take a lock, so two

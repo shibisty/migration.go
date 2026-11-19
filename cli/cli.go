@@ -59,7 +59,7 @@ type Options struct {
 	// name of Dir).
 	Package string
 	// Template is the text/template of a new migration file; a backend
-	// provides one (migration-orm: ormstore.Template). It gets .Name (the
+	// provides one (migration/orm: ormstore.Template). It gets .Name (the
 	// full name), .Description, .Package, .Table (users for
 	// create_users_table, add_x_to_users_table) and .Create (create_*).
 	Template string
@@ -227,7 +227,7 @@ var (
 func Make(opts Options, description string) (string, error) {
 	opts = opts.withDefaults()
 	if opts.Template == "" {
-		return "", errors.New("no migration template: set cli.Options.Template (migration-orm: ormstore.Template)")
+		return "", errors.New("no migration template: set cli.Options.Template (migration/orm: ormstore.Template)")
 	}
 	if !identRe.MatchString(opts.Package) {
 		return "", fmt.Errorf("package name %q (from %s) is not a Go identifier; set cli.Options.Package", opts.Package, opts.Dir)
