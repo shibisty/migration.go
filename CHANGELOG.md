@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.1 — 2026-11-19
+
 ### Added
 - `migration/cli`: the command line of a migration program (`cli.Main`, `cli.Run`):
   `migrate`, `migrate:rollback [--step N]`, `migrate:reset`, `migrate:refresh`,
